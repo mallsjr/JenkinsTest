@@ -4,7 +4,7 @@ pipeline {
     stage('BUILD') {
       steps {
         sh 'echo \'Building..\''
-        sh 'echo \'Github testing..\''
+        sh 'mvn clean'
       }
     }
     stage('TEST') {
