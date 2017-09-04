@@ -4,6 +4,7 @@ pipeline {
     stage('BUILD') {
       steps {
         sh 'echo \'Building..\''
+        sh 'echo \'Github testing..\''
       }
     }
     stage('TEST') {
