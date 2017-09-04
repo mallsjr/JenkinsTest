@@ -13,6 +13,7 @@ pipeline {
     stage('TEST') {
       steps {
         sh 'echo \'Testing..\''
+        junit 'target/surefire-reports/*.xml'
       }
     }
     stage('DEPLOY') {
