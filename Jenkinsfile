@@ -7,7 +7,7 @@ pipeline {
     stage('BUILD') {
       steps {
         sh 'echo \'Building..\''
-        sh 'mvn clean install'
+        sh 'mvn clean install sonar:sonar'
       }
     }
     stage('TEST') {
