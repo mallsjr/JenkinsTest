@@ -1,4 +1,4 @@
-@Library('SharedLib') _
+@Library('sharedLibrary') _
 
 StandardPipeline {
                 //Tools
