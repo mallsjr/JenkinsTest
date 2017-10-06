@@ -1,4 +1,4 @@
-@Library('FXF_CI_Libraries') _
+@Library('SharedLib') _
 
 StandardPipeline {
                 //Tools
