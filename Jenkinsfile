@@ -7,7 +7,8 @@ StandardPipeline {
 
                 //Build Parameters
     SCM_url = "https://conexus.prod.fedex.com:9443/subversion/fxf_sp_index_web_gui/branches/Maven_Conversion/Entry_OFS_Maven"
-    MVN_build = "clean compile test site package -s settings.xml"
+    //MVN_build = "clean compile test site package -s settings.xml"
+    MVN_build = "clean compile test site package"
     SonarQube_Analysis = "sonar:sonar -Dmaven.test.skip=true -s settings.xml"
     Nexus_Deploy = "deploy -Dmaven.test.skip=true -s settings.xml"
 
